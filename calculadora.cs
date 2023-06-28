@@ -5,28 +5,27 @@ namespace EspacioCalculadora
     {
         private double dato;
 
-        public calculadora()
-        {
-        }
+        public double Resultado { get => dato; }
 
-        public double Resultado { get => dato;  }
-
-        public void Sumar(double termino) 
+        public void Sumar(double termino)
         {
-            dato += termino; 
+            dato += termino;
         }
-        public void Restar(double termino) 
+        public void Restar(double termino)
         {
-            dato -= termino; 
+            dato -= termino;
         }
-        public void Multiplicar(double termino) 
+        public void Multiplicar(double termino)
         {
-            dato *= termino; 
+            dato *= termino;
         }
-        public void Dividir(double termino) 
+        public void Dividir(double termino)
         {
-            dato /= termino; 
+            dato /= termino;
         }
-
+        public void Limpiar()
+        {
+            dato = 0;
+        }
     }
 }
